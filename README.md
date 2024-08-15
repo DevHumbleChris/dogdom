@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+Dogdom Mobile UI
+=====================================
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Overview
+--------
 
-## Get started
+Dogdom is a mobile UI application developed using React Native and Nativewind (TailwindCSS). It provides a delightful user interface for interacting with information related to dogs.
 
-1. Install dependencies
+Figma Screenshot
+-----------
+
+<img src="./assets/images/dogdom.png" alt="dogdom" />
+
+Technologies Used
+-----------------
+
+- [Expo - React Native](https://expo.dev/)
+- [Nativewind (TailwindCSS)](https://www.nativewind.dev/)
+
+How to Run
+----------
+
+1. Clone the repository:
+
+```bash
+    git clone https://github.com/DevHumbleChris/Dogdom.git
+```
+
+1. Clone the repository:
+
+   ```bash
+      git clone https://github.com/DevHumbleChris/Dogdom.git
+   ```
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the app
 
    ```bash
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+Figma Design
+--------------
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+[Figm Design Link](https://www.figma.com/design/boLYVNBFQFtpPIMreeFyP2/Dogdom-UI-kits-(Community)?m=auto&t=OyNA1BakAgB96i8S-1)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Contributing
+------------
 
-## Get a fresh project
+Feel free to submit issues and pull requests. Contributions are welcome!
 
-When you're ready, run:
+License
+-------
 
-```bash
-npm run reset-project
-```
+This project is licensed under the MIT License.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Contact
+---------------
 
-## Learn more
+For any inquiries or feedback, please contact [thecodingmontana@gmail.com](thecodingmontana@gmail.com)
+
+Learn more
+---------------
 
 To learn more about developing your project with Expo, look at the following resources:
 
 - [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
 - [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
