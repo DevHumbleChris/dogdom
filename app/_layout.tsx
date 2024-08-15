@@ -14,6 +14,13 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    OPPOSansHeavy: require('../assets/fonts/OPPOSansHeavy.ttf'),
+    SFProDisplayBold: require('../assets/fonts/SF-Pro-Display-Bold.otf'),
+    SFProDisplayHeavy: require('../assets/fonts/SF-Pro-Display-Heavy.otf'),
+    SFProDisplayMedium: require('../assets/fonts/SF-Pro-Display-Medium.otf'),
+    SFProDisplayRegular: require('../assets/fonts/SF-Pro-Display-Regular.otf'),
+    SFProDisplaySemibold: require('../assets/fonts/SF-Pro-Display-Semibold.otf'),
+    SFProTextRegular: require('../assets/fonts/SF-Pro-Text-Regular.otf'),
   });
 
   useEffect(() => {
