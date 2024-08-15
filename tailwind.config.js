@@ -10,6 +10,15 @@ module.exports = {
     colors: {
       primary: "FA6650",
     },
+    fontFamily: {
+      oppoSansHeavy: ["OPPOSansHeavy"],
+      sfProBold: ["SFProDisplayBold"],
+      sfProHeavy: ["SFProDisplayHeavy"],
+      sfProMedium: ["SFProDisplayMedium"],
+      sfProRegular: ["SFProDisplayRegular"],
+      sfProSemibold: ["SFProDisplaySemibold"],
+      sfProTextRegular: ["SFProTextRegular"],
+    },
   },
   plugins: [],
 };
