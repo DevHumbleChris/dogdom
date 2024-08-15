@@ -1,9 +1,34 @@
-// You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
+import { View, Text } from 'react-native'
+import React from 'react'
+import { HomeIcon } from '../svg/Home'
+import { HomeFilled } from '../svg/HomeFilled'
+import { IconName } from '@/types'
+import { CircleFilled } from '../svg/CircleFilled'
+import { CircleIcon } from '../svg/Circle'
+import { MessageFilled } from '../svg/MessageFilled'
+import { MessageIcon } from '../svg/Mesage'
+import { UserFilled } from '../svg/UserFilled'
+import { UserIcon } from '../svg/User'
+import { ReleaseIcon } from '../svg/Release'
 
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { type IconProps } from '@expo/vector-icons/build/createIconSet';
-import { type ComponentProps } from 'react';
+export default function TabBarIcon({ color, focused, size, name }: {
+  size: number,
+  color: string,
+  focused: boolean,
+  name: IconName
+}) {
 
-export function TabBarIcon({ style, ...rest }: IconProps<ComponentProps<typeof Ionicons>['name']>) {
-  return <Ionicons size={28} style={[{ marginBottom: -3 }, style]} {...rest} />;
+  const roleIconMap: Record<IconName, React.ReactNode> = {
+    [IconName.HOME]: focused ? <HomeFilled size={size} /> : <HomeIcon size={size} />,
+    [IconName.CIRCLE]: focused ? <CircleFilled size={size} /> : <CircleIcon size={size} />,
+    [IconName.USER]: focused ? <UserFilled size={size} /> : <UserIcon size={size} />,
+    [IconName.MESSAGE]: focused ? <MessageFilled size={size} /> : <MessageIcon size={size} />,
+    [IconName.RELEASE]: focused ? <ReleaseIcon size={size} /> : <ReleaseIcon size={size} />
+  }
+
+  return (
+    <View>
+      {roleIconMap[name]}
+    </View>
+  )
 }

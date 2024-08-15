@@ -7,9 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    colors: {
-      primary: "FA6650",
-    },
     fontFamily: {
       oppoSansHeavy: ["OPPOSansHeavy"],
       sfProBold: ["SFProDisplayBold"],
