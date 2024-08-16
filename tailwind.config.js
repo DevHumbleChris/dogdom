@@ -6,15 +6,19 @@ module.exports = {
     "./components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-      oppoSansHeavy: ["OPPOSansHeavy"],
-      sfProBold: ["SFProDisplayBold"],
-      sfProHeavy: ["SFProDisplayHeavy"],
-      sfProMedium: ["SFProDisplayMedium"],
-      sfProRegular: ["SFProDisplayRegular"],
-      sfProSemibold: ["SFProDisplaySemibold"],
-      sfProTextRegular: ["SFProTextRegular"],
+    extend: {
+      fontFamily: {
+        oppoSansHeavy: ["OPPOSansHeavy"],
+        sfProBold: ["SFProDisplayBold"],
+        sfProHeavy: ["SFProDisplayHeavy"],
+        sfProMedium: ["SFProDisplayMedium"],
+        sfProRegular: ["SFProDisplayRegular"],
+        sfProSemibold: ["SFProDisplaySemibold"],
+        sfProTextRegular: ["SFProTextRegular"],
+      },
+      colors: {
+        primary: "#FA6650",
+      },
     },
   },
   plugins: [],
