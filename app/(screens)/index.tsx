@@ -3,6 +3,8 @@ import React, { useRef, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import PagerView from 'react-native-pager-view';
 import Header from '@/components/screens/home/Header';
+import SelectTab from '@/components/screens/home/SelectTab';
+import DiscoverTab from '@/components/screens/home/DiscoverTab';
 
 export default function HomeScreen() {
     const [activeTab, setActiveTab] = useState<number>(0);
@@ -21,12 +23,8 @@ export default function HomeScreen() {
         <SafeAreaView className='bg-white h-full'>
             <Header onTabPress={onTabPress} activeTab={activeTab} />
             <PagerView ref={pagerRef} className='flex-1' initialPage={0} onPageSelected={onPageSelected}>
-                <View key={1}>
-                    <Text>Hello 1</Text>
-                </View>
-                <View key={2}>
-                    <Text>Hello 2</Text>
-                </View>
+                <SelectTab key={1} />
+                <DiscoverTab key={2} />
             </PagerView>
         </SafeAreaView>
     )
