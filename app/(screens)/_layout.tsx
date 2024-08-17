@@ -3,6 +3,8 @@ import { Tabs } from 'expo-router'
 import TabBarIcon from '@/components/navigation/TabBarIcon'
 import { IconName } from '@/types'
 import { StatusBar } from 'expo-status-bar'
+import { Text } from 'react-native'
+import CircleHeaderRight from '@/components/screens/circle/CircleHeaderRight'
 
 export default function ScreenLayout() {
     return (
@@ -24,9 +26,21 @@ export default function ScreenLayout() {
                     )
                 }} />
                 <Tabs.Screen name='circle' options={{
-                    headerShown: false,
                     tabBarIcon: (icon) => (
                         <TabBarIcon {...icon} name={IconName.CIRCLE} />
+                    ),
+                    headerStyle: {
+                        backgroundColor: 'white',
+                    },
+                    headerLeft: () => (
+                        <Text className='text-2xl ml-3 font-sfProSemibold'>Circle</Text>
+                    ),
+                    headerTitleStyle: {
+                        display: 'none'
+                    },
+                    headerShadowVisible: false,
+                    headerRight: () => (
+                        <CircleHeaderRight />
                     )
                 }} />
                 <Tabs.Screen name='release' options={{
