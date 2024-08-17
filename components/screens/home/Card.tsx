@@ -6,16 +6,13 @@ import { Comment } from '@/components/svg/Comment'
 import { Share } from '@/components/svg/Share'
 import { More } from '@/components/svg/More'
 import { Post } from '@/types'
+import { formatNumber } from '@/utils'
 
 interface SelectCardProps {
     item: Post
 }
 
 export default function Card({ item }: SelectCardProps) {
-    function formatNumber(num: number): string {
-        return new Intl.NumberFormat('en-US').format(num);
-    }
-
     return (
         <View className='space-y-2 mb-6'>
             <View className='flex-row items-center justify-between'>

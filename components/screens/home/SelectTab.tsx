@@ -16,6 +16,7 @@ export default function SelectTab() {
                 <SelectListHeader />
             )}
             className='w-full h-full px-4 py-3'
+            showsVerticalScrollIndicator={false}
         />
     )
 }

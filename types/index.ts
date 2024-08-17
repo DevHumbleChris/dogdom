@@ -131,3 +131,48 @@ export const discoverData: Post[] = [
     },
   },
 ];
+
+export interface Circle {
+  id: string;
+  name: string;
+  image: string;
+  members: number;
+}
+
+export const popularCircle: Circle[] = [
+  {
+    id: "1",
+    name: "Golden Retriever",
+    image:
+      "https://images.unsplash.com/photo-1422565096762-bdb997a56a84?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZGVuJTIwcmV0cmlldmVyfGVufDB8fDB8fHww",
+    members: 4377,
+  },
+  {
+    id: "2",
+    name: "Back of the head",
+    image:
+      "https://images.unsplash.com/photo-1650930629267-293fd465fefb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+    members: 423,
+  },
+  {
+    id: "3",
+    name: "Adopt",
+    image:
+      "https://images.unsplash.com/photo-1647233506263-83cdd9f98c8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+    members: 603,
+  },
+  {
+    id: "4",
+    name: "Labrador Peninsula",
+    image:
+      "https://images.unsplash.com/photo-1685343425149-b4934140a2e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+    members: 1223,
+  },
+  {
+    id: "5",
+    name: "The life of a dog king",
+    image:
+      "https://images.unsplash.com/photo-1709777571247-39ad71a2d86e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+    members: 4590,
+  },
+];
