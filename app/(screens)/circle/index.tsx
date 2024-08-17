@@ -1,8 +1,8 @@
-import CircleListHeader from '@/components/screens/circle/CircleListHeader'
-import CircleToJoin from '@/components/screens/circle/CircleToJoin'
-import { popularCircle } from '@/types'
+import { View, Text, FlatList } from 'react-native'
 import React from 'react'
-import { FlatList, ScrollView, Text } from 'react-native'
+import { popularCircle } from '@/types'
+import CircleToJoin from '@/components/screens/circle/CircleToJoin'
+import CircleListHeader from '@/components/screens/circle/CircleListHeader'
 
 export default function CircleScreen() {
     return (

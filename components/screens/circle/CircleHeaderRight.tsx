@@ -5,7 +5,7 @@ import { Add } from '@/components/svg/Add'
 
 export default function CircleHeaderRight() {
     return (
-        <View className='mr-4 flex-row items-center gap-5'>
+        <View className='flex-row items-center gap-5'>
             <TouchableOpacity>
                 <Scan />
             </TouchableOpacity>

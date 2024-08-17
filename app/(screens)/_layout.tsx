@@ -32,16 +32,8 @@ export default function ScreenLayout() {
                     headerStyle: {
                         backgroundColor: 'white',
                     },
-                    headerLeft: () => (
-                        <Text className='text-2xl ml-3 font-sfProSemibold'>Circle</Text>
-                    ),
-                    headerTitleStyle: {
-                        display: 'none'
-                    },
                     headerShadowVisible: false,
-                    headerRight: () => (
-                        <CircleHeaderRight />
-                    )
+                    headerShown: false
                 }} />
                 <Tabs.Screen name='release' options={{
                     headerShown: false,
@@ -50,7 +42,7 @@ export default function ScreenLayout() {
                     ),
                     tabBarStyle: {
                         display: 'none'
-                    }
+                    },
                 }} />
                 <Tabs.Screen name='message' options={{
                     headerShown: false,
