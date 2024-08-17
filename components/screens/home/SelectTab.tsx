@@ -1,14 +1,16 @@
 import { View, Text, ScrollView, FlatList } from 'react-native'
 import React from 'react'
 import SelectListHeader from './SelectListHeader'
+import Card from './Card'
+import { selectData } from '@/types'
 
 export default function SelectTab() {
     return (
         <FlatList
-            data={[{ id: '1' }]}
+            data={selectData}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-                <Text>Hello {item.id}</Text>
+                <Card item={item} />
             )}
             ListHeaderComponent={() => (
                 <SelectListHeader />

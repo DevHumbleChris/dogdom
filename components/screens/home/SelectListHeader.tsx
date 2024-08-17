@@ -1,24 +1,15 @@
 import { View, Text, TouchableOpacity, FlatList } from 'react-native'
 import React from 'react'
-import { SearchIcon } from '@/components/svg/Search'
-import { VoiceIcon } from '@/components/svg/Voice'
 import { RankingIcon } from '@/components/svg/Ranking'
 import { DiscussIcon } from '@/components/svg/Discuss'
 import { SurroundingIcon } from '@/components/svg/Surrounding'
 import SelectCarousel from './SelectCarousel'
+import Search from '../Search'
 
 export default function SelectListHeader() {
     return (
         <View className='pb-6 space-y-5'>
-            <View className='bg-[#FAFAFA]/50 items-center justify-between flex-row rounded-full px-4 py-3'>
-                <TouchableOpacity className='flex-row items-center gap-1'>
-                    <SearchIcon />
-                    <Text className='font-sfProRegular text-[#BBBBBB] text-sm'>Send the sample</Text>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                    <VoiceIcon />
-                </TouchableOpacity>
-            </View>
+            <Search />
             <View className='flex-row justify-evenly gap-x-10'>
                 <TouchableOpacity className='items-center'>
                     <RankingIcon />
