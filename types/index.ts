@@ -292,3 +292,30 @@ export const notications: Notice[] = [
     date: "11 days ago",
   },
 ];
+
+export const searchHistory = [
+  "Spring outing",
+  "Teddy",
+  "Toe",
+  "Show MOE",
+  "Dogs don't like to eat",
+];
+
+export const topSearch = ["Dog food", "Circle", "Lost dog revelation"];
+
+export const popularQA = [
+  {
+    id: 1,
+    topic: "What is it about dogs that don't like to eat?",
+    answer: "132 to answer",
+    image:
+      "https://images.unsplash.com/photo-1518578436155-409d8e7b991b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbiUyMHdpdGglMjBkb2d8ZW58MHx8MHx8fDA%3D",
+  },
+  {
+    id: 2,
+    topic: "How does the dog have a fever the first time deal with?",
+    answer: "2356 to answer",
+    image:
+      "https://images.unsplash.com/photo-1542596216-76b74273f392?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29uJTIwd2l0aCUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D",
+  },
+];
