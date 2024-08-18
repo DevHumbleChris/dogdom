@@ -1,12 +1,21 @@
 import React from 'react'
-import { Tabs } from 'expo-router'
+import { Tabs, useSegments } from 'expo-router'
 import TabBarIcon from '@/components/navigation/TabBarIcon'
 import { IconName } from '@/types'
 import { StatusBar } from 'expo-status-bar'
-import { Text } from 'react-native'
-import CircleHeaderRight from '@/components/screens/circle/CircleHeaderRight'
 
 export default function ScreenLayout() {
+    const segment = useSegments();
+
+    // Function to check if arrays are equal
+    function arraysEqual(a: string[], b: string[]): boolean {
+        return a.length === b.length && a.every((val, index) => val === b[index]);
+    }
+
+    // Check if segments match the expected array
+    const expectedSegments = ["(screens)", "circle", "[id]"];
+    const segmentsMatch = arraysEqual(segment, expectedSegments)
+
     return (
         <>
             <Tabs screenOptions={{
@@ -33,7 +42,14 @@ export default function ScreenLayout() {
                         backgroundColor: 'white',
                     },
                     headerShadowVisible: false,
-                    headerShown: false
+                    headerShown: false,
+                    tabBarStyle: {
+                        display: segmentsMatch ? 'none' : 'flex',
+                        height: 65,
+                        backgroundColor: "#FFF",
+                        borderTopWidth: 0.5,
+                        borderTopColor: "#FCFCFC",
+                    }
                 }} />
                 <Tabs.Screen name='release' options={{
                     headerShown: false,
