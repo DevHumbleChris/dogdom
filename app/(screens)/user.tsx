@@ -1,10 +1,15 @@
-import { View, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 import React from 'react'
+import UserInfo from '@/components/screens/user/UserInfo'
+import UserStats from '@/components/screens/user/UserStats'
+import UserStatsNavigations from '@/components/screens/user/UserStatsNavigations'
 
 export default function UserScreen() {
     return (
-        <View className='flex-1 items-center justify-center'>
-            <Text className='text-[#FA6650] font-sfProTextRegular text-4xl'>UserScreen</Text>
-        </View>
+        <ScrollView className='h-full w-full bg-white py-2 px-3 relative'>
+            <UserInfo />
+            <UserStats />
+            <UserStatsNavigations />
+        </ScrollView>
     )
 }

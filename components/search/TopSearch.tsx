@@ -6,12 +6,7 @@ import { topSearch } from '@/types'
 export default function TopSearch() {
     return (
         <View className='mb-4 space-y-2'>
-            <View className='flex-row items-center justify-between'>
-                <Text className='text-xl font-sfProMedium'>Top search🔥</Text>
-                <TouchableOpacity>
-                    <DeleteIcon />
-                </TouchableOpacity>
-            </View>
+            <Text className='text-xl font-sfProMedium'>Top search 🔥</Text>
 
             <View className='flex-row items-center flex-wrap gap-3'>
                 {

@@ -5,6 +5,9 @@ import { IconName } from '@/types'
 import { StatusBar } from 'expo-status-bar'
 import { Text } from 'react-native'
 import NoticeHeaderRight from '@/components/screens/notice/NoticeHeaderRight'
+import ReleaseHeaderLeft from '@/components/screens/release/ReleaseHeaderLeft'
+import ReleaseHeaderRight from '@/components/screens/release/ReleaseHeaderRight'
+import UserHeaderRight from '@/components/screens/user/UserHeaderRight'
 
 export default function ScreenLayout() {
     const segment = useSegments();
@@ -54,13 +57,20 @@ export default function ScreenLayout() {
                     }
                 }} />
                 <Tabs.Screen name='release' options={{
-                    headerShown: false,
                     tabBarIcon: (icon) => (
                         <TabBarIcon {...icon} name={IconName.RELEASE} />
                     ),
                     tabBarStyle: {
                         display: 'none'
                     },
+                    title: '',
+                    headerShadowVisible: false,
+                    headerLeft: () => (
+                        <ReleaseHeaderLeft />
+                    ),
+                    headerRight: () => (
+                        <ReleaseHeaderRight />
+                    )
                 }} />
                 <Tabs.Screen name='notice' options={{
                     tabBarIcon: (icon) => (
@@ -81,9 +91,18 @@ export default function ScreenLayout() {
                     }
                 }} />
                 <Tabs.Screen name='user' options={{
-                    headerShown: false,
                     tabBarIcon: (icon) => (
                         <TabBarIcon {...icon} name={IconName.USER} />
+                    ),
+                    headerTitleStyle: {
+                        display: 'none'
+                    },
+                    headerShadowVisible: false,
+                    headerLeft: () => (
+                        <Text className='text-2xl font-sfProSemibold ml-3'>Personal</Text>
+                    ),
+                    headerRight: () => (
+                        <UserHeaderRight />
                     )
                 }} />
             </Tabs>
