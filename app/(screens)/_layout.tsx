@@ -3,6 +3,8 @@ import { Tabs, useSegments } from 'expo-router'
 import TabBarIcon from '@/components/navigation/TabBarIcon'
 import { IconName } from '@/types'
 import { StatusBar } from 'expo-status-bar'
+import { Text } from 'react-native'
+import NoticeHeaderRight from '@/components/screens/notice/NoticeHeaderRight'
 
 export default function ScreenLayout() {
     const segment = useSegments();
@@ -60,11 +62,23 @@ export default function ScreenLayout() {
                         display: 'none'
                     },
                 }} />
-                <Tabs.Screen name='message' options={{
-                    headerShown: false,
+                <Tabs.Screen name='notice' options={{
                     tabBarIcon: (icon) => (
                         <TabBarIcon {...icon} name={IconName.MESSAGE} />
-                    )
+                    ),
+                    headerLeft: () => (
+                        <Text className='text-2xl font-sfProSemibold ml-3'>Message</Text>
+                    ),
+                    headerRight: () => (
+                        <NoticeHeaderRight />
+                    ),
+                    headerShadowVisible: false,
+                    headerTitleStyle: {
+                        display: 'none',
+                    },
+                    headerStyle: {
+                        backgroundColor: 'white'
+                    }
                 }} />
                 <Tabs.Screen name='user' options={{
                     headerShown: false,

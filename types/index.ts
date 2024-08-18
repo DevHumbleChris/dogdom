@@ -245,3 +245,50 @@ export const discussData: Discuss[] = [
       "A healthy puppy's body temperature ranges from 38.5 to 39.5 degrees, and is slightly higher in the afternoon. The temperature difference between day and night is generally less than 1 degree...",
   },
 ];
+
+export interface Notice {
+  id: string;
+  type: {
+    name: string;
+    avatar: string | null;
+  };
+  title: string;
+  content: string;
+  date: string;
+}
+
+export const notications: Notice[] = [
+  {
+    id: "1",
+    type: {
+      name: "circle",
+      avatar:
+        "https://images.unsplash.com/photo-1709777571247-39ad71a2d86e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+    },
+    title: "Love dog little assistant",
+    content:
+      "Congratulations! Your article was recommended by dog lovers to feature",
+    date: "02/07",
+  },
+  {
+    id: "2",
+    type: {
+      name: "notify",
+      avatar: null,
+    },
+    title: "The system informs",
+    content:
+      "We will spare no effort to protect the ecology of the community and severely crack down on violations of regulations",
+    date: "05/18",
+  },
+  {
+    id: "3",
+    type: {
+      name: "app",
+      avatar: null,
+    },
+    title: "Dogdom",
+    content: "Your March report has been generated, click to view.",
+    date: "11 days ago",
+  },
+];
