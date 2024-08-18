@@ -12,7 +12,7 @@ export default function CircleDynamic() {
                 <Card item={item} />
             )}
             showsVerticalScrollIndicator={false}
-            className='mt-5'
+            className='mt-2'
         />
     )
 }

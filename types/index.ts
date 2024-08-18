@@ -176,3 +176,72 @@ export const popularCircle: Circle[] = [
     members: 4590,
   },
 ];
+
+export interface Discuss {
+  id: string;
+  topic: string;
+  user: {
+    name: string;
+    avatar: string;
+  };
+  likes: number;
+  comments: number;
+  content: string;
+}
+
+export const discussData: Discuss[] = [
+  {
+    id: "1",
+    topic:
+      "Healthy puppy body temperature is 38.5 degrees -39.5 degrees, normal?",
+    user: {
+      name: "Ernest Guzman",
+      avatar:
+        "https://images.unsplash.com/profile-1646498449187-31e424953763image?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    },
+    likes: 113,
+    comments: 121,
+    content:
+      "A healthy puppy's body temperature ranges from 38.5 to 39.5 degrees, and is slightly higher in the afternoon. The temperature difference between day and night is generally less than 1 degree...",
+  },
+  {
+    id: "2",
+    topic: "How can I stop my dog from picking up food?",
+    user: {
+      name: "Jeremy Bishop",
+      avatar:
+        "https://images.unsplash.com/profile-1610519305252-c9d552283aaaimage?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    },
+    likes: 500,
+    comments: 21,
+    content:
+      "When dogs go out, there will be a general situation, that is to liberate nature, free themselves, this time...",
+  },
+  {
+    id: "3",
+    topic: "Does dog appetite not good reason and ameliorate method?",
+    user: {
+      name: "William Watts",
+      avatar:
+        "https://images.unsplash.com/profile-1636845830684-1e9199e57a5d?w=64&dpr=2&crop=faces&bg=%23fff&h=64&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    },
+    likes: 2123,
+    comments: 500,
+    content:
+      "A healthy puppy's body temperature ranges from 38.5 to 39.5 degrees, and is slightly higher in the afternoon. The temperature difference between day and night is generally less than 1 degree.",
+  },
+  {
+    id: "4",
+    topic:
+      "Healthy puppy body temperature is 38.5 degrees -39.5 degrees, normal?",
+    user: {
+      name: "Ernest Guzman",
+      avatar:
+        "https://images.unsplash.com/profile-1646498449187-31e424953763image?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    },
+    likes: 113,
+    comments: 121,
+    content:
+      "A healthy puppy's body temperature ranges from 38.5 to 39.5 degrees, and is slightly higher in the afternoon. The temperature difference between day and night is generally less than 1 degree...",
+  },
+];

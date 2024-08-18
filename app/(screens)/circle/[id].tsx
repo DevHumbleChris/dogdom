@@ -3,6 +3,10 @@ import React, { useRef, useState } from 'react'
 import PagerView from 'react-native-pager-view';
 import CircleDynamic from '@/components/screens/circle/CircleDynamic';
 import CircleSelect from '@/components/screens/circle/CircleSelect';
+import CircleDiscuss from '@/components/screens/circle/CircleDiscuss';
+import { QuestionsIcon } from '@/components/svg/Questions';
+import { ArticleIcon } from '@/components/svg/Article';
+import { DynamicIcon } from '@/components/svg/Dynamic';
 
 export default function Circle() {
     const [activeTab, setActiveTab] = useState<number>(0);
@@ -17,7 +21,7 @@ export default function Circle() {
         setActiveTab(e.nativeEvent.position);
     };
     return (
-        <View className='bg-white flex-1 px-4'>
+        <View className='bg-white flex-1 px-4 relative'>
             <View className='pt-4'>
                 <Text className='font-sfProRegular text-sm text-gray-600'>
                     Notice Group buying dog food.
@@ -51,11 +55,25 @@ export default function Circle() {
             </View>
             <PagerView ref={pagerRef} className='flex-1' initialPage={0} onPageSelected={onPageSelected}>
                 <CircleDynamic key={0} />
-                <View key={1}>
-                    <Text>1</Text>
-                </View>
+                <CircleDiscuss key={1} />
                 <CircleSelect key={2} />
             </PagerView>
+            <View className='flex-row items-center justify-evenly bg-white drop-shadow-sm shadow-sm p-3 rounded-full absolute bottom-2 left-5 right-5' style={{
+                shadowColor: '#000'
+            }}>
+                <TouchableOpacity className='items-center space-y-1'>
+                    <QuestionsIcon />
+                    <Text>Questions</Text>
+                </TouchableOpacity>
+                <TouchableOpacity className='items-center space-y-1'>
+                    <ArticleIcon />
+                    <Text>Article</Text>
+                </TouchableOpacity>
+                <TouchableOpacity className='items-center space-y-1'>
+                    <DynamicIcon />
+                    <Text>Dynamic</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     )
 }
